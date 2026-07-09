@@ -202,7 +202,7 @@ const Contact = () => {
                 </div>
                 {/* Email */}
                 <a
-                  href="mailto:hello@hexora.com"
+                  href="mailto:hexoraflow@gmail.com"
                   className=" group mt-7 lg:mt-auto pt-6 border-t border-white/15 flex items-center justify-between gap-4 "
                 >
                   <span>
@@ -210,7 +210,7 @@ const Contact = () => {
                       Prefer Email?
                     </span>
                     <span className=" block mt-1 text-sm md:text-base text-slate-200 ">
-                      hello@hexora.com
+                      hexoraflow@gmail.com
                     </span>
                   </span>
                   <span className=" w-11 h-11 shrink-0 flex items-center justify-center border border-white/20 transition-all duration-300 group-hover:bg-orange-500 group-hover:border-orange-500 ">

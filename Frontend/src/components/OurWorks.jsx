@@ -14,12 +14,12 @@ const projects = [
   },
   {
     id: "02",
-    title: "PORTFOLIO",
-    type: "WEB / PORTFOLIO",
+    title: "CIVITRACK AI",
+    type: "WEB / AI",
     description:
-      "A meticulously crafted personal portfolio website that blends clean aesthetics with subtle animations to create a premium user experience.",
-    image: "/PortfolioImg.png",
-    link: "https://sivanesh-portfolio-web.vercel.app/",
+      "A transparent, AI-powered platform for reporting public issues and tracking government resolutions in real-time.",
+    image: "/CiviTrackAI.png",
+    link: "https://civitrackai.vercel.app/",
   },
   {
     id: "03",
