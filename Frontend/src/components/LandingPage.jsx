@@ -508,9 +508,9 @@ const LandingPage = () => {
                     text-slate-600
                   "
                 >
-                  We build websites, mobile applications, UI/UX
-                  experiences and custom software that help ambitious
-                  businesses launch, grow and scale with confidence.
+                  We design and build custom websites, mobile apps, and
+                  digital experiences that engage your audience and help your
+                  business scale.
                 </p>
               </motion.div>
             </div>

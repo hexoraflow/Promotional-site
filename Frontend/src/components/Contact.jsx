@@ -150,8 +150,8 @@ const Contact = () => {
             className=" lg:col-span-4 lg:pb-2 "
           >
             <p className=" max-w-lg border-l-2 border-orange-500 pl-4 md:pl-5 text-sm md:text-[15px] lg:text-base leading-7 text-slate-300 ">
-              Tell us what you want to build. A rough idea is enough — we can
-              figure out the rest together.
+              Have a project in mind? Share your goals with us, and let's build
+              a solution tailored to your business.
             </p>
           </motion.div>
         </div>
@@ -190,15 +190,14 @@ const Contact = () => {
                     Start With <br /> The Idea.
                   </h3>
                   <p className=" mt-5 max-w-sm text-[15px] md:text-base leading-7 text-slate-400 ">
-                    No polished brief needed. Share the problem, product, or
-                    opportunity you're thinking about.
+                    Whether you have detailed specs or just an initial concept, we'll help turn your vision into a production-ready product.
                   </p>
                 </div>
                 {/* Expectations */}
                 <div className=" grid grid-cols-2 lg:grid-cols-1 gap-3 mt-1 ">
-                  <InfoItem number="01" title="Tell us the idea" />
-                  <InfoItem number="02" title="We review the scope" />
-                  <InfoItem number="03" title="We plan next steps" />
+                  <InfoItem number="01" title="Share your goals" />
+                  <InfoItem number="02" title="We analyze requirements" />
+                  <InfoItem number="03" title="We outline a roadmap" />
                 </div>
                 {/* Email */}
                 <a

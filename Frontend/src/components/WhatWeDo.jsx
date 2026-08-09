@@ -15,7 +15,7 @@ const services = [
     title: "Web Development",
     shortTitle: "Web",
     description:
-      "Fast, scalable and carefully engineered websites built to turn ideas into high-performing digital experiences.",
+      "Fast, search-optimized websites built with modern frameworks to engage visitors and convert leads.",
     tags: ["React", "Django", "Full Stack"],
     icon: Code2,
   },
@@ -24,7 +24,7 @@ const services = [
     title: "Mobile Applications",
     shortTitle: "Mobile",
     description:
-      "Intuitive mobile products designed around real user behaviour, seamless interaction and long-term growth.",
+      "Native and cross-platform iOS and Android apps designed for intuitive user experience and reliable performance.",
     tags: ["Android", "iOS", "Cross Platform"],
     icon: Smartphone,
   },
@@ -33,7 +33,7 @@ const services = [
     title: "UI / UX Design",
     shortTitle: "Design",
     description:
-      "Clear digital interfaces shaped through thoughtful systems, strong visual hierarchy and purposeful interaction.",
+      "User-centered web and app interface design focused on clear visual hierarchy, accessibility, and high conversion.",
     tags: ["UI Systems", "UX", "Prototyping"],
     icon: PenTool,
   },
@@ -42,18 +42,18 @@ const services = [
     title: "Custom Software",
     shortTitle: "Software",
     description:
-      "Purpose-built software systems created to solve complex operational challenges and support ambitious businesses.",
+      "Tailored web applications and software tools built to automate business processes and optimize operations.",
     tags: ["Automation", "Systems", "Scalable"],
     icon: Cpu,
   },
   {
-  id: "05",
-  title: "Graphic Design",
-  shortTitle: "Design",
-  description:
-    "High-impact visual assets and brand identity systems designed to capture attention and communicate your core message.",
-  tags: ["Branding", "Print", "Typography"],
-  icon: Palette,
+    id: "05",
+    title: "Graphic Design",
+    shortTitle: "Design",
+    description:
+      "Distinctive brand identities, logos, and digital graphics that elevate your presence and establish trust.",
+    tags: ["Branding", "Print", "Typography"],
+    icon: Palette,
   },
 ];
 
@@ -318,8 +318,8 @@ const WhatWeDo = () => {
                 text-slate-400
               "
             >
-              We design and engineer digital systems that help
-              ambitious ideas become useful, scalable products.
+              We design and build custom digital products engineered
+              to solve real business challenges and drive measurable growth.
             </p>
           </motion.div>
         </div>

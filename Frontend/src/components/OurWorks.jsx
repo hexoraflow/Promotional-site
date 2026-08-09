@@ -2,37 +2,38 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
+// Client showcase project data
+// To add more client projects in the future, simply add new project objects to this array.
 const projects = [
   {
     id: "01",
     title: "SHARKINGS INTERIORS",
+    category: "CLIENT WORK",
     type: "INTERIORS / WEB",
     description:
-      "An immersive, high-fidelity gallery website crafted to showcase luxury interior design projects with fluid animations and a focus on visual storytelling.",
+      "A bespoke gallery website designed for luxury interior projects, combining responsive interactive visuals with clear brand storytelling.",
     image: "/SharkingInteriorImg.png",
-    link: "https://sharkings-interior.vercel.app/",
+    link: "https://www.sharkingsinteriors.in/",
+    tags: ["UI/UX Design", "React", "Tailwind CSS"],
   },
+  /*
+  // Add future client projects here:
   {
     id: "02",
-    title: "CIVITRACK AI",
-    type: "WEB / AI",
-    description:
-      "A transparent, AI-powered platform for reporting public issues and tracking government resolutions in real-time.",
-    image: "/CiviTrackAI.png",
-    link: "https://civitrackai.vercel.app/",
+    title: "PROJECT NAME",
+    category: "CLIENT WORK",
+    type: "WEB / APPLICATION",
+    description: "Detailed description of the client project...",
+    image: "/ProjectImage.png",
+    link: "https://client-project-url.com/",
+    tags: ["React", "Node.js", "Tailwind"],
   },
-  {
-    id: "03",
-    title: "BUDGET TRACKER",
-    type: "WEB / EXPERIENCE",
-    description:
-      "A streamlined financial management tool that turns complex spending habits into clear, actionable insights through interactive data visualizations.",
-    image: "/BudgetTrackerImg.png",
-    link: "https://budgettrackingapp.vercel.app/",
-  },
+  */
 ];
 
 const OurWorks = () => {
+  const formattedCount = String(projects.length).padStart(2, "0");
+
   return (
     <section
       id="works"
@@ -106,7 +107,7 @@ const OurWorks = () => {
                   uppercase
                 "
               >
-                Selected Projects / 2026
+                Selected Client Work / 2026
               </span>
             </div>
 
@@ -154,8 +155,7 @@ const OurWorks = () => {
                 md:text-slate-600
               "
             >
-              Selected digital products shaped through design,
-              technology and clear thinking.
+              Featured client projects engineered for brand impact, speed, and real business results.
             </p>
           </div>
         </div>
@@ -173,38 +173,33 @@ const OurWorks = () => {
             lg:gap-6
           "
         >
-          {/* Main Project */}
+          {/* Main Featured Client Project */}
           <div className="lg:col-span-7">
-            <ProjectCard
-              project={projects[0]}
-              large
-              delay={0}
-            />
+            <ProjectCard project={projects[0]} large delay={0} />
           </div>
 
-          {/* Secondary Projects */}
+          {/* Secondary Projects & Future Slot Teaser */}
           <div
             className="
               lg:col-span-5
 
-              grid
-              grid-cols-1
-              sm:grid-cols-2
-              lg:grid-cols-1
-
+              flex
+              flex-col
               gap-5
               lg:gap-6
             "
           >
-            <ProjectCard
-              project={projects[1]}
-              delay={0.08}
-            />
+            {/* Additional projects (if added to array later) */}
+            {projects.slice(1).map((proj, idx) => (
+              <ProjectCard
+                key={proj.id}
+                project={proj}
+                delay={(idx + 1) * 0.08}
+              />
+            ))}
 
-            <ProjectCard
-              project={projects[2]}
-              delay={0.16}
-            />
+            {/* Upcoming Client Work Card */}
+            <UpcomingWorkCard delay={projects.length * 0.08} />
           </div>
         </div>
 
@@ -243,10 +238,11 @@ const OurWorks = () => {
               uppercase
             "
           >
-            Index / 03 Selected Works
+            Index / {formattedCount} Selected Client Work{projects.length > 1 ? "s" : ""}
           </span>
 
-          <button
+          <a
+            href="#contact"
             className="
               group
               flex
@@ -264,7 +260,7 @@ const OurWorks = () => {
               uppercase
             "
           >
-            View All
+            Start A Project
 
             <ArrowUpRight
               size={16}
@@ -276,7 +272,7 @@ const OurWorks = () => {
                 group-hover:-translate-y-1
               "
             />
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -402,60 +398,6 @@ const ProjectCard = ({
         >
           PROJECT / {project.id}
         </div>
-
-        {/* Orange Node */}
-        <div
-          className="
-            absolute
-            top-4
-            right-4
-
-            w-2
-            h-2
-            md:w-2.5
-            md:h-2.5
-
-            bg-orange-500
-          "
-        />
-
-        {/* Bottom Left Technical Corner */}
-        <div
-          className="
-            absolute
-            left-4
-            bottom-4
-
-            w-6
-            h-6
-
-            md:w-8
-            md:h-8
-
-            border-l
-            border-b
-            border-white/80
-          "
-        />
-
-        {/* Bottom Right Technical Corner */}
-        <div
-          className="
-            absolute
-            right-4
-            bottom-4
-
-            w-6
-            h-6
-
-            md:w-8
-            md:h-8
-
-            border-r
-            border-b
-            border-white/80
-          "
-        />
       </div>
 
       {/* =====================================================
@@ -603,6 +545,116 @@ const ProjectCard = ({
             />
           </a>
         </div>
+      </div>
+    </motion.article>
+  );
+};
+
+/* =========================================================
+   UPCOMING WORK CARD (Placeholder for future client projects)
+========================================================= */
+
+const UpcomingWorkCard = ({ delay = 0.08 }) => {
+  return (
+    <motion.article
+      initial={{
+        opacity: 0,
+        y: 25,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      viewport={{
+        once: true,
+        margin: "-50px",
+      }}
+      transition={{
+        duration: 0.6,
+        delay,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      className="
+        group
+        relative
+        overflow-hidden
+        border
+        border-slate-900
+        bg-slate-950
+        text-white
+        p-6
+        md:p-8
+        flex
+        flex-col
+        justify-between
+        h-full
+        min-h-[280px]
+        md:min-h-[340px]
+      "
+    >
+      {/* Background Micro Grid */}
+      <div
+        className="
+          absolute
+          inset-0
+          pointer-events-none
+          opacity-20
+        "
+        style={{
+          backgroundImage: `
+            linear-gradient(#ffffff 1px, transparent 1px),
+            linear-gradient(90deg, #ffffff 1px, transparent 1px)
+          `,
+          backgroundSize: "36px 36px",
+        }}
+      />
+
+      {/* Top Header */}
+      <div className="relative z-10 flex items-center justify-between">
+        <span className="font-mono text-[9px] md:text-xs tracking-[0.22em] uppercase text-orange-400 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+          Next Case Study / Coming Soon
+        </span>
+      </div>
+
+      {/* Center Body */}
+      <div className="relative z-10 my-6">
+        <h3 className="font-['Space_Grotesk'] text-2xl md:text-3xl font-bold uppercase tracking-tight text-white">
+          Your Brand Here
+        </h3>
+        <p className="mt-3 text-xs md:text-sm text-slate-300 leading-relaxed max-w-md">
+          We build custom websites and digital tools tailored to grow your business. Ready to launch your next project?
+        </p>
+      </div>
+
+      {/* Bottom CTA */}
+      <div className="relative z-10 flex items-center justify-between pt-4 border-t border-slate-800">
+        <span className="font-mono text-[9px] md:text-[11px] tracking-widest text-slate-400 uppercase">
+          Available Client Slot
+        </span>
+
+        <a
+          href="#contact"
+          className="
+            inline-flex
+            items-center
+            gap-2
+            px-4
+            py-2.5
+            bg-orange-500
+            hover:bg-orange-600
+            text-white
+            text-xs
+            font-semibold
+            uppercase
+            tracking-wider
+            transition-colors
+            duration-300
+          "
+        >
+          Let's Connect
+          <ArrowUpRight size={14} />
+        </a>
       </div>
     </motion.article>
   );
