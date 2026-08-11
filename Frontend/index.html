@@ -1,37 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/iconn.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <title>hexora | High-Performance Web & App Development (hexoraflow.in)</title>
-    <meta name="description" content="hexora (hexoraflow.in) is a premier digital studio building custom websites, mobile applications, UI/UX designs, and software solutions to help your business scale." />
-    <meta name="keywords" content="hexora, hexoraflow, hexoraflow.in, hexora studio, web development, mobile apps, UI UX design, custom software" />
-    <meta name="author" content="hexora Studio" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://hexoraflow.in/" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/iconn.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
 
-    <!-- Open Graph / Facebook / LinkedIn -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hexoraflow.in/" />
-    <meta property="og:site_name" content="hexora" />
-    <meta property="og:title" content="hexora | Web & Mobile App Development Studio" />
-    <meta property="og:description" content="hexora (hexoraflow.in) builds custom websites, mobile apps, and digital experiences that scale your business." />
-    <meta property="og:image" content="https://hexoraflow.in/SharkingInteriorImg.png" />
+  <title>hexora | High-Performance Web & App Development (hexoraflow.in)</title>
+  <meta name="description"
+    content="hexora (hexoraflow.in) is a premier digital studio building custom websites, mobile applications, UI/UX designs, and software solutions to help your business scale." />
+  <meta name="keywords"
+    content="hexora, hexoraflow, hexoraflow.in, hexora studio, web development, mobile apps, UI UX design, custom software" />
+  <meta name="author" content="hexora Studio" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="QcdFylGX-EbigbCh7XItaZ8LkQhFZ4WCffVoOegyyzo" />
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://hexoraflow.in/" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://hexoraflow.in/" />
-    <meta name="twitter:title" content="hexora | Web & Mobile App Development Studio" />
-    <meta name="twitter:description" content="hexora (hexoraflow.in) builds custom websites, mobile apps, and digital experiences that scale your business." />
-    <meta name="twitter:image" content="https://hexoraflow.in/SharkingInteriorImg.png" />
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hexoraflow.in/" />
+  <meta property="og:site_name" content="hexora" />
+  <meta property="og:title" content="hexora | Web & Mobile App Development Studio" />
+  <meta property="og:description"
+    content="hexora (hexoraflow.in) builds custom websites, mobile apps, and digital experiences that scale your business." />
+  <meta property="og:image" content="https://hexoraflow.in/SharkingInteriorImg.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="hexora - Digital Product Studio" />
 
-    <!-- Structured Data / JSON-LD for Google Search ranking -->
-    <script type="application/ld+json">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://hexoraflow.in/" />
+  <meta name="twitter:title" content="hexora | Web & Mobile App Development Studio" />
+  <meta name="twitter:description"
+    content="hexora (hexoraflow.in) builds custom websites, mobile apps, and digital experiences that scale your business." />
+  <meta name="twitter:image" content="https://hexoraflow.in/SharkingInteriorImg.png" />
+
+  <!-- Structured Data / JSON-LD for Google Search ranking -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
@@ -41,6 +53,8 @@
           "name": "hexora",
           "alternateName": ["hexoraflow", "hexoraflow.in", "heXora", "hexora studio"],
           "url": "https://hexoraflow.in/",
+          "logo": "https://hexoraflow.in/iconn.png",
+          "email": "hexoraflow@gmail.com",
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "hexoraflow@gmail.com",
@@ -48,11 +62,22 @@
           }
         },
         {
+          "@type": "ProfessionalService",
+          "@id": "https://hexoraflow.in/#service",
+          "name": "hexora Studio",
+          "url": "https://hexoraflow.in/",
+          "image": "https://hexoraflow.in/SharkingInteriorImg.png",
+          "description": "Custom Web Development, Mobile Applications, UI/UX Design, and Software Solutions.",
+          "priceRange": "$$"
+        },
+        {
           "@type": "WebSite",
           "@id": "https://hexoraflow.in/#website",
           "url": "https://hexoraflow.in/",
           "name": "hexora",
           "alternateName": "hexoraflow",
+          "description": "hexora (hexoraflow.in) is a premier digital studio building custom websites, mobile applications, UI/UX designs, and software solutions.",
+          "inLanguage": "en",
           "publisher": {
             "@id": "https://hexoraflow.in/#organization"
           }
@@ -60,9 +85,11 @@
       ]
     }
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
