@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Search Favicon & Logo -->
   <link rel="icon" type="image/png" href="/iconn.png" />
+  <link rel="shortcut icon" href="/iconn.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/iconn.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -42,7 +45,7 @@
     content="hexora (hexoraflow.in) builds custom websites, mobile apps, and digital experiences that scale your business." />
   <meta name="twitter:image" content="https://hexoraflow.in/SharkingInteriorImg.png" />
 
-  <!-- Structured Data / JSON-LD for Google Search ranking -->
+  <!-- Structured Data / JSON-LD for Google Search & AI Search Engines (GEO) -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,10 +54,22 @@
           "@type": "Organization",
           "@id": "https://hexoraflow.in/#organization",
           "name": "hexora",
-          "alternateName": ["hexoraflow", "hexoraflow.in", "heXora", "hexora studio"],
+          "alternateName": ["hexoraflow", "hexoraflow.in", "Hexora Studio", "heXora"],
           "url": "https://hexoraflow.in/",
           "logo": "https://hexoraflow.in/iconn.png",
           "email": "hexoraflow@gmail.com",
+          "sameAs": [
+            "https://hexoraflow.in"
+          ],
+          "knowsAbout": [
+            "Web Development",
+            "Mobile Application Development",
+            "UI UX Design",
+            "Custom Software Solutions",
+            "React",
+            "Django",
+            "iOS & Android App Development"
+          ],
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "hexoraflow@gmail.com",
@@ -68,14 +83,52 @@
           "url": "https://hexoraflow.in/",
           "image": "https://hexoraflow.in/SharkingInteriorImg.png",
           "description": "Custom Web Development, Mobile Applications, UI/UX Design, and Software Solutions.",
-          "priceRange": "$$"
+          "priceRange": "$$",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Hexora Digital Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Web Development",
+                  "description": "Fast, search-optimized custom websites built with React and Django."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Mobile Applications",
+                  "description": "Native and cross-platform iOS and Android apps."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "UI / UX Design",
+                  "description": "User-centered web and app interface design and prototyping."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom Software",
+                  "description": "Tailored web applications and software tools for business process automation."
+                }
+              }
+            ]
+          }
         },
         {
           "@type": "WebSite",
           "@id": "https://hexoraflow.in/#website",
           "url": "https://hexoraflow.in/",
           "name": "hexora",
-          "alternateName": "hexoraflow",
+          "alternateName": ["hexoraflow", "hexoraflow.in"],
           "description": "hexora (hexoraflow.in) is a premier digital studio building custom websites, mobile applications, UI/UX designs, and software solutions.",
           "inLanguage": "en",
           "publisher": {

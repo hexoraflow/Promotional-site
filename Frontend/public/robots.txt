@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
 
+# Allow AI Search Crawlers & Models
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
 Sitemap: https://hexoraflow.in/sitemap.xml
+
