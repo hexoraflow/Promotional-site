@@ -4,17 +4,19 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 
 import Navbar from "./Navbar";
 import CustomCursor from "./CustomCursor";
+import AboutUs from "./AboutUs";
 import WhatWeDo from "./WhatWeDo";
 import OurWorks from "./OurWorks";
+import Pricing from "./Pricing";
 import FloatingShapes from "./FloatingShapes";
-import Contact from './Contact'
+import Contact from "./Contact";
 
 const ease = [0.22, 1, 0.36, 1];
 
 const LandingPage = () => {
-  const scrollToServices = () => {
+  const scrollToExplore = () => {
     document
-      .getElementById("services")
+      .getElementById("about")
       ?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -400,7 +402,7 @@ const LandingPage = () => {
                   delay: 0.8,
                   ease,
                 }}
-                onClick={scrollToServices}
+                onClick={scrollToExplore}
                 className="
                   hidden
                   lg:flex
@@ -688,6 +690,12 @@ const LandingPage = () => {
       </section>
 
       {/* =====================================================
+          ABOUT US SECTION
+      ====================================================== */}
+
+      <AboutUs />
+
+      {/* =====================================================
           DARK CAPABILITIES SECTION
       ====================================================== */}
 
@@ -698,6 +706,16 @@ const LandingPage = () => {
       ====================================================== */}
 
       <OurWorks />
+
+      {/* =====================================================
+          TRANSPARENT PRICING SECTION
+      ====================================================== */}
+
+      <Pricing />
+
+      {/* =====================================================
+          CONTACT SECTION
+      ====================================================== */}
 
       <Contact />
     </>

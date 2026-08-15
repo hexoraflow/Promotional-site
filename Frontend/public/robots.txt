@@ -1,7 +1,20 @@
 User-agent: *
 Allow: /
 
-# Allow AI Search Crawlers & Models
+# Google Search & Googlebot Crawlers (including favicon & logo indexers)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# AI Search Crawlers & Models
 User-agent: GPTBot
 Allow: /
 
@@ -14,8 +27,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: GoogleOther
-Allow: /
-
 Sitemap: https://hexoraflow.in/sitemap.xml
-

@@ -446,18 +446,24 @@ const Contact = () => {
         <footer className=" mt-8 md:mt-10 pt-6 border-t border-white/15 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 ">
           <a
             href="#home"
-            className=" inline-flex items-center font-['Space_Grotesk'] text-xl md:text-2xl font-bold tracking-[-0.06em] "
+            className=" inline-flex items-center group "
           >
-            heXora <span className="ml-0.5 text-orange-500">.</span>
+            <img
+              src="/logo-dark.png"
+              alt="HexoraFlow Logo"
+              width="44"
+              height="44"
+              className=" h-10 md:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105 "
+            />
           </a>
           <div className=" flex items-center gap-3 ">
             <span className=" w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse " />
-            <span className=" font-mono text-[9px] md:text-[10px] tracking-[0.16em] uppercase text-slate-500 ">
+            <span className=" font-mono text-[9px] md:text-[10px] tracking-[0.16em] uppercase text-slate-400 ">
               Open For New Projects
             </span>
           </div>
-          <span className=" font-mono text-[9px] tracking-[0.15em] uppercase text-slate-600 ">
-            © {new Date().getFullYear()} heXora Studio
+          <span className=" font-mono text-[9px] tracking-[0.15em] uppercase text-slate-500 ">
+            © {new Date().getFullYear()} HexoraFlow Studio
           </span>
         </footer>
       </div>

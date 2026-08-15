@@ -1,39 +1,61 @@
-# Hexora (hexoraflow.in)
+# HexoraFlow (hexoraflow.in) - Madurai & Global Web Studio
 
-> Hexora (hexoraflow.in) is a premier digital studio building high-performance web applications, mobile apps, custom software solutions, and UI/UX design.
+> HexoraFlow (hexoraflow.in) is the leading web and mobile app development company based in Madurai, Tamil Nadu, engineering high-performance websites, web applications, mobile apps, and custom software for businesses across South Tamil Nadu, India, and Worldwide.
 
-## About Hexora
-Hexora is a software development and digital product studio. We specialize in engineering modern, scalable, search-optimized web and mobile solutions tailored for growing businesses, startups, and enterprises.
+## About HexoraFlow
+HexoraFlow is a software engineering and digital product studio headquartered in Madurai, Tamil Nadu. We specialize in building modern, scalable, search-optimized web and mobile solutions tailored for growing businesses and startups in Madurai, South Tamil Nadu (Tirunelveli, Dindigul, Thoothukudi, Virudhunagar, Sivakasi, Theni, Nagercoil), Chennai, Bangalore, and globally (USA, UK, Europe, UAE, Singapore, Australia).
 
 - **Website**: https://hexoraflow.in
-- **Brand Name**: Hexora (also known as hexoraflow, hexora studio)
+- **Brand Name**: HexoraFlow (also known as Hexora Flow, hexoraflow.in, HexoraFlow Studio, HexoraFlow Madurai)
 - **Primary Domain**: https://hexoraflow.in
 - **Email Contact**: hexoraflow@gmail.com
-- **Industry**: Web Development, Mobile App Development, Custom Software Engineering, UI/UX Design
+- **Headquarters**: Madurai, Tamil Nadu, India
+- **Primary Service Regions**: Madurai, South Tamil Nadu (Tirunelveli, Dindigul, Thoothukudi, Virudhunagar, Sivakasi, Theni, Kanyakumari), Chennai, Coimbatore, Tamil Nadu, Pan-India, and Global (US, UK, UAE, Europe, Australia, Singapore)
+- **Core Services**: Full-Stack Web Development, Mobile App Development, Custom Software Engineering, UI/UX Design
 
 ## Core Services & Solutions
 
-1. **Web Development**
-   - High-performance, SEO-friendly custom websites and web applications built with React, Next.js, Django, and modern full-stack architectures.
+1. **Web Development in Madurai & Tamil Nadu**
+   - High-performance, search-optimized custom business websites, corporate portals, and e-commerce platforms.
+   - Sub-second load times, 95+ Core Web Vitals, built with React, Next.js, Django, and modern full-stack architectures.
 2. **Mobile Application Development**
-   - Native and cross-platform mobile apps for iOS and Android built for reliability, smooth user interfaces, and speed.
+   - Native and cross-platform mobile apps for iOS and Android built with React Native for reliability, fluid micro-interactions, and high performance.
 3. **UI / UX Design**
-   - User-centered interface design, digital prototyping, visual systems, accessibility optimization, and product design.
-4. **Custom Software & Automation**
-   - Scalable SaaS applications, custom business tools, API integrations, and workflow automation.
-5. **Graphic Design & Branding**
-   - Visual brand identities, logo design, print assets, typography, and digital branding assets.
+   - User-centered interface design, digital prototyping in Figma, custom visual design systems, accessibility optimization, and conversion engineering.
+4. **Custom Software & SaaS Engineering**
+   - Scalable SaaS applications, custom ERP / business tools, billing & inventory systems, API integrations, and cloud automation.
+5. **Brand Identity & Graphic Design**
+   - Visual brand identities, logo design, print assets, typography systems, and digital branding assets.
+
+## Transparent Pricing & Packages
+
+### 1. Basic Package (Starter Business Website)
+- **Pricing**: ₹7,000 INR / $89 USD (One-time)
+- **Turnaround**: 3–5 Days Delivery
+- **Includes**: Up to 5 custom responsive pages, 95+ Google PageSpeed, mobile/tablet friendly, Google Search Console indexing & local SEO, contact form & WhatsApp chat, Cloudflare SSL, 30 days maintenance.
+
+### 2. Growth Package (Full-Stack Web App & Dynamic Website) - Most Popular
+- **Pricing**: ₹20,000 INR / $249 USD (One-time)
+- **Turnaround**: 7–10 Days Delivery
+- **Includes**: Custom React / Next.js / Django architecture, custom UI/UX design in Figma, CMS / dynamic database integration, advanced Google SEO & Schema markup, payment gateway (Razorpay / UPI / Stripe), admin dashboard, 60 days dedicated support.
+
+### 3. Premium Package (Custom Software & Mobile Solutions)
+- **Pricing**: ₹35,000 INR / $449 USD (One-time)
+- **Turnaround**: 14–20 Days Delivery
+- **Includes**: Custom web platform or mobile application, scalable cloud backend (Python, Node.js), user accounts & role management, custom API integrations, business automation tools, automated backups & cloud deployment, 90 days priority support.
 
 ## Tech Stack & Capabilities
-- **Frontend**: React, JavaScript, HTML5, CSS3, Tailwind CSS, Vite, Framer Motion
-- **Backend & Systems**: Django, Python, Node.js, RESTful APIs
+- **Frontend**: React, Next.js, JavaScript, HTML5, CSS3, Tailwind CSS, Vite, Framer Motion
+- **Backend & Systems**: Django, Python, Node.js, RESTful APIs, PostgreSQL
+- **Mobile**: React Native, iOS, Android
 - **Design & Prototyping**: Figma, UI/UX Design Systems, Prototyping
-- **Optimization**: SEO, Performance Tuning, Responsive Design, Generative Engine Optimization (GEO)
+- **Optimization**: Google Search Engine Optimization (SEO), Performance Tuning, Responsive Design
 
 ## Selected Works
 - **Sharkings Interiors**: Luxury interior showcase & web platform (https://www.sharkingsinteriors.in/)
 
-## Official Contact & Links
+## Official Contact & Inquiries
 - **Official Website**: https://hexoraflow.in/
 - **Contact Email**: hexoraflow@gmail.com
 - **Services Request**: https://hexoraflow.in/#contact
+- **Pricing Details**: https://hexoraflow.in/#pricing

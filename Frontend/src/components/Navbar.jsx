@@ -10,16 +10,26 @@ const links = [
   },
   {
     id: "02",
+    label: "About Us",
+    href: "#about",
+  },
+  {
+    id: "03",
     label: "What We Do",
     href: "#services",
   },
   {
-    id: "03",
+    id: "04",
     label: "Our Works",
     href: "#works",
   },
   {
-    id: "04",
+    id: "05",
+    label: "Pricing",
+    href: "#pricing",
+  },
+  {
+    id: "06",
     label: "Contact Us",
     href: "#contact",
   },
@@ -149,65 +159,38 @@ const Navbar = () => {
             className="
               group
               relative
-
               flex
               items-center
-
-              font-['Space_Grotesk']
-              font-bold
-
-              text-xl
-              md:text-2xl
-
-              tracking-[-0.06em]
-
-              text-slate-950
+              py-1
             "
           >
-            <span>he</span>
-
-            <span
+            <img
+              src="/logo-light.png"
+              alt="HexoraFlow Logo"
+              width="48"
+              height="48"
               className="
-                relative
-                inline-block
-                uppercase
-
+                h-11
+                md:h-12
+                w-auto
+                object-contain
                 transition-transform
                 duration-300
-
-                group-hover:-translate-y-[1px]
+                group-hover:scale-105
               "
-            >
-              X
-            </span>
-
-            <span>ora</span>
-
-            <span
-              className="
-                ml-0.5
-                text-orange-500
-              "
-            >
-              .
-            </span>
+            />
 
             {/* Tiny technical line */}
             <span
               className="
                 absolute
-
-                -bottom-2
+                -bottom-1.5
                 left-0
-
                 w-0
                 h-px
-
                 bg-orange-500
-
                 transition-all
                 duration-500
-
                 group-hover:w-full
               "
             />
@@ -616,7 +599,7 @@ const Navbar = () => {
                     text-slate-500
                   "
                 >
-                  Navigation / 04
+                  Navigation / 06
                 </span>
 
                 <span className="flex-1 h-px bg-slate-300" />
